@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Regular.ttf) format('truetype');
+    src: url("../fonts/Raleway-Regular.ttf") format('truetype');
 
     font-weight: normal;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Medium.ttf) format('truetype');
+    src: url("../fonts/Raleway-Medium.ttf") format('truetype');
 
     font-weight: 500;
     font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-SemiBold.ttf) format('truetype');
+    src: url("../fonts/Raleway-SemiBold.ttf") format('truetype');
 
     font-weight: 600;
     font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'KaushanScript';
-    src: url(../fonts/KaushanScript-Regular.ttf) format('truetype');
+    src: url("../fonts/KaushanScript-Regular.ttf") format('truetype');
 
     font-weight: normal;
     font-style: normal;
@@ -816,7 +816,7 @@ p {
 }
 
 .footer__block-form {
-    background: url(/src/img/footer.jpg) center no-repeat;
+    background: url("../img/footer.jpg") center no-repeat;
     background-size: cover;
     width: 49%;
     padding-left: 2rem;

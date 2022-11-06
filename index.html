@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Салон красоты "Flacon"</title>
 </head>
@@ -43,7 +43,7 @@
                                         <img src="src/img/icons/location_dot.png" alt="Иконка 'Точка Локации'">
                                     </div>
                                     <div>
-                                        <a href="#">Ярославль, ул. 5-я Новая, д. 5</a>
+                                        <a href="#">Ярославль, 5-я Новая, 5</a>
                                     </div>
                                 </div>
 
@@ -72,6 +72,74 @@
                             </div>
                         </div>
                     </nav>
+
+                    <button class="nav-toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+                    <!-- /.nav__toggle -->
+
+                    <div class="burger">
+                        <h2 class="burger-header__title">
+                            <a href="#">Меню</a>
+                        </h2>
+                        <nav class="burger-nav">
+                            <div class="burger-nav__item">
+                                <div class="burger-nav__link">
+                                    <a href="#">Услуги</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Обучение шугарингу</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Портфолио</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">О нас</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="burger-nav__item burger-nav__item-info">
+                                <div class="burger-nav__link">
+                                    <div class="burger-nav__link-item">
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/icons/location_dot.png" alt="Иконка 'Точка Локации'">
+                                        </div>
+                                        <div>
+                                            <a href="#">Ярославль, 5-я Новая, 5</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="burger-nav__link">
+                                    <div class="burger-nav__link-item">
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/icons/phone.png" alt="Телефон">
+                                        </div>
+                                        <div>
+                                            <a href="tel:+79531232750">+7 (953) 123 2750</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="burger-nav__link">
+                                    <div class="burger-nav__link-item">
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/icons/watch.png" alt="Часы">
+                                        </div>
+                                        <div>
+                                            <span>09:00 - 20:00</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </nav>
+                        <h2 class="burger-header__logo">
+                            <a href="#">Flacon</a>
+                        </h2>
+                    </div>
                 </div>
             </div>
             <!-- /.container -->
@@ -92,9 +160,10 @@
                                 <div class="intro__content-image">
                                     <img src="src/img/intro/02.jpg" alt="">
                                 </div>
-
-                                <div class="intro__content-text">Доступные цены, высокое качество</div>
-                                <button class="button intro">Записаться в салон</button>
+                                <div class="intro__content-group">
+                                    <div class="intro__content-text">Доступные цены, высокое качество</div>
+                                    <button class="button intro">Записаться в салон</button>
+                                </div>
 
                             </div>
                         </div>
@@ -136,7 +205,7 @@
                                         <p class="table__cell">Зона лица</p>
                                     </div>
                                     <div class="table-col">
-                                        <p class="table__head">Длительность</p>
+                                        <p class="table__head short">Длительность</p>
                                         <p class="table__cell">20 минут</p>
                                         <p class="table__cell">20 минут</p>
                                     </div>
@@ -146,8 +215,9 @@
                                         <p class="table__cell">300 ₽</p>
                                     </div>
 
-                                    <a class="services__table-link" href="#">Смотреть все процедуры</a>
+
                                 </div>
+                                <a class="services__table-link" href="#">Смотреть все процедуры</a>
                             </div>
 
                         </div>
@@ -186,8 +256,9 @@
                                         <p class="table__cell">300 ₽</p>
                                     </div>
 
-                                    <a class="services__table-link" href="#">Смотреть все процедуры</a>
+
                                 </div>
+                                <a class="services__table-link" href="#">Смотреть все процедуры</a>
                             </div>
                         </div>
                     </div>
@@ -205,6 +276,7 @@
                         <div class="reasons__image">
                             <img src="src/img/reasons.jpg" alt="">
                         </div>
+                        <!-- </div> -->
                         <div class="reasons__content">
                             <div class="reasons__item">
                                 <span class="reasons__item-number">01</span>
@@ -218,13 +290,15 @@
                                 <h2 class="item-title reasons__item-title">Косметика<br>
                                     Patrisa Nail</h2>
                                 <p class="reasons__item-text">Мы порадуем вас маникюром и наращиванием ногтей
-                                    с использованием немецкой профессиональной косметики Patrisa Nail. Гель-лаки Solomer
+                                    с использованием немецкой профессиональной косметики Patrisa Nail. Гель-лаки
+                                    Solomer
                                     (Великобритания), Shellac - впечатлит цветовой гаммой.</p>
                             </div>
                             <div class="reasons__item">
                                 <span class="reasons__item-number">03</span>
                                 <h2 class="item-title reasons__item-title">Индивидуальный подход к каждому</h2>
-                                <p class="reasons__item-text">Мы непременно порадуем вас отличным сервисом и доступными
+                                <p class="reasons__item-text">Мы непременно порадуем вас отличным сервисом
+                                    и доступными
                                     ценами. Салон «Концепция красоты» владеет лицензией на все виды косметических
                                     процедур, в том числе инъекционные. </p>
                             </div>
@@ -267,21 +341,379 @@
                     <div class="header__group">
                         <h1 class="works__title title">Наши работы</h1>
                         <!-- /.works__title title -->
-                        <div class="slider"></div>
+                        <div class="works__slider-btns">
+
+                        </div>
                         <!-- /.slider -->
-                        <div class="works"></div>
-                        <!-- /.works -->
                     </div>
                     <!-- /.header__group -->
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="slider__image">
+                                <img src="src/img/works/01.jpg" alt="">
+                            </div>
+                            <div class="slider__image slider__images">
+                                <img src="src/img/works/02.jpg" alt="">
+                                <img src="src/img/works/03.jpg" alt="">
+                            </div>
+                            <div class="slider__image">
+                                <img src="src/img/works/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider__image">
+                                <img src="src/img/works/04.jpg" alt="">
+                            </div>
+                            <div class="slider__image slider__images">
+                                <img src="src/img/works/03.jpg" alt="">
+                                <img src="src/img/works/02.jpg" alt="">
+                            </div>
+                            <div class="slider__image">
+                                <img src="src/img/works/01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.section -->
+
+            <section class="section">
+                <div class="container">
+                    <div class="header__group">
+                        <h1 class="reviews__title title">Отзывы</h1>
+                        <div class="reviews__slider-btns">
+
+                        </div>
+                    </div>
+                    <!-- /.header__group -->
+
+                    <div class="reviews">
+                        <div class="reviews__test">
+                            <div class="reviews__item">
+                                <div class="reviews__content">
+                                    <div class="reviews__avatar">
+                                        <img src="src/img/reviews/01.jpg" alt="">
+                                    </div>
+                                    <h2 class="review__title item-title">Татьяная Карпова</h2>
+                                    <div class="review__text">Сегодня была у Дарьи, очень довольна! Замечательная
+                                        стрижка
+                                        и волшебный цвет, омбре. Мастер своего дела, Дарья с полуслова поняла,
+                                        что мне нужно. Вышла с салона я красивая и счастливая! Спасибо!</div>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__content">
+                                    <div class="reviews__avatar">
+                                        <img src="src/img/reviews/02.jpg" alt="">
+                                    </div>
+                                    <h2 class="review__title item-title">Наталья Анисимова</h2>
+                                    <div class="review__text">Добрый день! Записалась на шатуш к Дарье 15.05.16. Работой
+                                        мастера очень довольна. Волосы оживились, приобрели природный блеск, перестали
+                                        пушится. Цввет получился плавным. В подарок сделали кератиновое восста…</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__test">
+
+                            <div class="reviews__item">
+                                <div class="reviews__content">
+                                    <div class="reviews__avatar">
+                                        <img src="src/img/reviews/02.jpg" alt="">
+                                    </div>
+                                    <h2 class="review__title item-title">Lorem, ipsum.</h2>
+                                    <div class="review__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Quasi sapiente, delectus sed nihil doloribus dolores, omnis ipsam iusto non ut
+                                        maiores provident odio porro sequi dignissimos. Aliquid placeat laborum ullam?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__content">
+                                    <div class="reviews__avatar">
+                                        <img src="src/img/reviews/01.jpg" alt="">
+                                    </div>
+                                    <h2 class="review__title item-title">Lorem, ipsum.</h2>
+                                    <div class="review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Aperiam exercitationem officiis iusto dolorum ex vitae sequi. Dignissimos velit
+                                        ex tempore atque facilis deleniti. Perferendis beatae illo ad voluptates culpa.
+                                        Laborum.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.reviews -->
+                </div><!-- /.container -->
+            </section>
+            <!-- /.section -->
+
+            <section class="section">
+                <div class="container">
+                    <h1 class="location__title title">Мы на карте</h1>
+
+                    <div class="location">
+                        <div class="location__item">
+                            <div class="location__image">
+                                <img class="location__img" src="src/img/location/01.png" alt="">
+                                <a class="location__dot" href="https://goo.gl/maps/5BM5R6yzc4QSvbPF6">
+                                    <img src="src/img/location/dot.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="location__item">
+
+                            <div class="location__image">
+                                <img class="location__img" src="src/img/location/02.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div><!-- /.location -->
+                </div><!-- /.container -->
+            </section>
+            <!-- /.section LOCATION -->
+
+            <section class="section">
+                <div class="container">
+                    <div class="header__group">
+                        <h1 class="documents__title title">Сертификаты и лицензии</h1>
+                        <!-- /.documents__title title -->
+
+                        <div class="documents__slider-btns">
+
+                        </div>
+                        <!-- /.slider -->
+                    </div>
+                    <!-- /.header__group -->
+                    <div class="documents">
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/01.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/02.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/03.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/04.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/01.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/02.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/03.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/04.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/01.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/02.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/03.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                        <!-- /.documents__item -->
+                        <div class="documents__item">
+                            <div class="documents__image">
+                                <img src="src/img/documents/04.jpg" alt="">
+                            </div>
+                            <!-- /.documents__image -->
+                        </div>
+                    </div>
+                    <!-- /.documents -->
                 </div>
                 <!-- /.container -->
             </section>
             <!-- /.section -->
         </main>
         <!-- /.main -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <!-- <div class="container"> -->
+            <!-- <div class="footer__inner"> -->
+
+            <div class="footer__block-form">
+
+                <div class="footer__form">
+                    <h1 class="feedback__title title">Давайте созвонимся</h1>
+
+                    <div class="footer__form-content">
+                        <form class="feedback" action="/" method="post">
+                            <input class="feedback__input name" type="name" name="name" placeholder="Имя">
+                            <input class="feedback__input phone" type="phone" name="phone" placeholder="Телефон">
+                            <input class="feedback__input mail" type="email" name="email"
+                                placeholder="Электронная почта">
+                            <input class="feedback__input text" type="text" name="text"
+                                placeholder="Опишите суть вопроса или предложения ">
+
+                        </form>
+                        <!-- /.form -->
+                        <button class="button form" type="submit">Отправить</button>
+                    </div>
+                    <div class="footer__form-text">Отправляя данную форму, вы соглашаетесь c <a
+                            class="footer__form-link" href="#">Политикой
+                            конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.footer__form -->
+            <div class="footer__block-footer">
+                <div class="footer__content">
+
+                    <h2 class="footer__logo">
+                        <a href="#">Flacon</a>
+                    </h2>
+
+                    <div class="copyright">Flakon © 2022</div>
+
+                    <div class="footer__item-content">
+                        <div class="footer__content-item">
+                            <h2 class="footer__content-title item-title">О компании</h2>
+
+                            <ul class="footer__content-menu">
+                                <li class="footer__menu-item"><a href="#">Услуги</a></li>
+                                <li class="footer__menu-item"><a href="#">Обучение шугарингу</a></li>
+                                <li class="footer__menu-item"><a href="#">Портфоило</a></li>
+                                <li class="footer__menu-item"><a href="#">О нас</a></li>
+                                <li class="footer__menu-item"><a href="#">Контакты</a></li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="footer__content-item">
+                            <h2 class="footer__content-title item-title">Контакты</h2>
+
+                            <ul class="footer__content-menu">
+                                <li class="footer__menu-item">
+                                    <div class="nav__link-item">
+                                        <div class="nav__link-icon">
+                                            <img src="src/img/icons/fotter_location_dot.png"
+                                                alt="Иконка 'Точка Локации'">
+                                        </div>
+                                        <div>
+                                            <a href="#">Ярославль, 5-я Новая, 5</a>
+                                        </div>
+                                    </div>
+                                <li class="footer__menu-item">
+                                    <div class="nav__link-item">
+                                        <div class="nav__link-icon">
+                                            <img src="src/img/icons/footer_phone.png" alt="Телефон">
+                                        </div>
+                                        <div>
+                                            <a href="tel:+79531232750">+7 (953) 123 2750</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <div class="nav__link-item">
+                                        <div class="nav__link-icon">
+                                            <img src="src/img/icons/footer_watch.png" alt="Часы">
+                                        </div>
+                                        <div>
+                                            <span>09:00 - 20:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                    <div class="test__block">
+                        <p class="footer__content-description">Все права защищены</p>
+                        <p class="footer__content-description">Политика конфиденциальности</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.footer__content -->
+            <!-- </div> -->
+            <!-- /.footer__inner -->
+            <!-- </div> -->
+            <!-- /.container -->
+        </footer>
         <!-- /.footer -->
+
+        <div class="slick__btns">
+            <div class="slick__btns2"></div>
+        </div>
+        <div class="test2__slider">
+            <div class="test2__slider-item">
+                <img src="src/img/works/01.jpg" alt="">
+            </div>
+            <div class="test2__slider-item">
+                <img src="src/img/works/02.jpg" alt="">
+                <img src="src/img/works/03.jpg" alt="">
+            </div>
+            <div class="test2__slider-item">
+                <img src="src/img/works/01.jpg" alt="">
+            </div>
+            <div class="test2__slider-item">
+                <img src="src/img/works/01.jpg" alt="">
+            </div>
+            <div class="test2__slider-item">
+                <img src="src/img/works/04.jpg" alt="">
+            </div>
+            <div class="test2__slider-item">
+                <img src="src/img/works/01.jpg" alt="">
+            </div>
+        </div>
+
     </div>
+    <!-- /.page -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

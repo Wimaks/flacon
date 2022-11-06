@@ -8,23 +8,59 @@ $(document).ready(function () {
     });
 
     $('.slider').slick({
+        slidesToShow: 3,
         infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         appendArrows: $('.works__slider-btns'),
-        fade: true,
         waitForAnimate: false,
-        adaptiveHeight: true
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.reviews').slick({
         infinite: false,
-        fade: true,
         appendArrows: $('.reviews__slider-btns'),
+        slidesToShow: 2,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
     });
 
     $('.documents').slick({
         appendArrows: $('.documents__slider-btns'),
-        slidesToShow: 4
-    })
+        slidesToShow: 4,
+        infinite: false,
+        responsive: [{
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 })

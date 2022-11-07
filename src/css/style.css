@@ -647,6 +647,7 @@ p {
 /* Лента слайдов */
 .slick-track {
     display: flex;
+    min-width: 0;
 }
 
 .reviews .slick-track,
@@ -670,6 +671,7 @@ p {
     display: flex;
     gap: 4rem;
     justify-content: space-around;
+    min-width: 0;
 }
 
 /* Слайд активный (показывается) */

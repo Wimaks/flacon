@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/flatpickr.min.css">
     <title>Салон красоты "Flacon"</title>
 </head>
 
@@ -162,7 +163,7 @@
                                 </div>
                                 <div class="intro__content-group">
                                     <div class="intro__content-text">Доступные цены, высокое качество</div>
-                                    <button class="button intro">Записаться в салон</button>
+                                    <button class="button intro popup-link">Записаться в салон</button>
                                 </div>
 
                             </div>
@@ -192,32 +193,59 @@
                                         востребованных процедур в салонах красоты. Раньше к депиляции прибегали только
                                         спортсмены, чтобы подготовиться к важному мероприятию. Но прогресс не стоит
                                         на месте и в ...</div>
-                                    <button class="button services">Записаться в один клик</button>
+                                    <button class="button services popup-link">Записаться в один клик</button>
                                 </div>
                             </div>
 
-                            <div class="services__item-table">
-                                <div class="services__table">
-
-                                    <div class="table-col">
-                                        <p class="table__head">Процедура</p>
-                                        <p class="table__cell">Подмышечные впадины</p>
-                                        <p class="table__cell">Зона лица</p>
+                            <div class="services__table">
+                                <div class="services__table-content">
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Процедура</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Зона лица</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                        </div>
                                     </div>
-                                    <div class="table-col">
-                                        <p class="table__head short">Длительность</p>
-                                        <p class="table__cell">20 минут</p>
-                                        <p class="table__cell">20 минут</p>
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Длительность</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                        </div>
                                     </div>
-                                    <div class="table-col">
-                                        <p class="table__head">Стоимость</p>
-                                        <p class="table__cell">450 ₽</p>
-                                        <p class="table__cell">300 ₽</p>
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Стоимость</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                        </div>
                                     </div>
-
 
                                 </div>
-                                <a class="services__table-link" href="#">Смотреть все процедуры</a>
+                                <div class="services__table-btn">
+                                    <a class="services__table-link" href="#">Смотреть все процедуры</a>
+                                </div>
                             </div>
 
                         </div>
@@ -233,32 +261,59 @@
                                         востребованных в бьюти-салонах. Каждая девушка мечтает о гладкой и мягкой коже,
                                         поэтому многие из них выбирают депиляцию в качестве процедуры удаления
                                         нежелательных ...</div>
-                                    <button class="button services">Записаться в один клик</button>
+                                    <button class="button services popup-link">Записаться в один клик</button>
                                 </div>
                             </div>
 
-                            <div class="services__item-table">
-                                <div class="services__table">
-
-                                    <div class="table-col">
-                                        <p class="table__head">Процедура</p>
-                                        <p class="table__cell">Подмышечные впадины</p>
-                                        <p class="table__cell">Зона лица</p>
+                            <div class="services__table">
+                                <div class="services__table-content">
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Процедура</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Зона лица</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                            <div class="services__table-item">Подмышечные впадины</div>
+                                        </div>
                                     </div>
-                                    <div class="table-col">
-                                        <p class="table__head">Длительность</p>
-                                        <p class="table__cell">10 минут</p>
-                                        <p class="table__cell">5 минут</p>
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Длительность</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                            <div class="services__table-item">20 минут</div>
+                                        </div>
                                     </div>
-                                    <div class="table-col">
-                                        <p class="table__head">Стоимость</p>
-                                        <p class="table__cell">450 ₽</p>
-                                        <p class="table__cell">300 ₽</p>
+                                    <div class="services__table-group">
+                                        <div class="services__table-header">Стоимость</div>
+                                        <div class="services__table-block">
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                        </div>
+                                        <div class="services__table-block hidden">
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                            <div class="services__table-item services__table-item-price">450 ₽</div>
+                                        </div>
                                     </div>
-
 
                                 </div>
-                                <a class="services__table-link" href="#">Смотреть все процедуры</a>
+                                <div class="services__table-btn">
+                                    <a class="services__table-link" href="#">Смотреть все процедуры</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -589,7 +644,7 @@
                     <div class="footer__form-content">
                         <form class="feedback" action="/" method="post">
                             <input class="feedback__input name" type="name" name="name" placeholder="Имя">
-                            <input class="feedback__input phone" type="phone" name="phone" placeholder="Телефон">
+                            <input class="feedback__input phone" type="tel" name="phone" placeholder="Телефон">
                             <input class="feedback__input mail" type="email" name="email"
                                 placeholder="Электронная почта">
                             <input class="feedback__input text" type="text" name="text"
@@ -686,8 +741,183 @@
     </div>
     <!-- /.page -->
 
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+
+                <h2 class="popup__title">Запись на шугаринг</h2>
+                <a href="#" class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        class="to-svg">
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(0.707109 0.707105 -0.707109 0.707105 12.6 0.000244141)" fill="#94378C">
+                        </rect>
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#94378C"></rect>
+                    </svg>
+                </a>
+                <div class="popup__content-block">
+                    <div class="popup__item salons">
+                        <div class="popup__item-list">
+                            <div class="popup__list-item">
+                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                                <div class="popup__list-card first">
+                                    <div class="popup__card-image">
+                                        <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
+                                    </div>
+                                    <div class="popup__card-content">
+                                        <h3 class="popup__card-name">Maria Vyguzova</h3>
+                                        <div class="popup__card-text">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing
+                                            elit. Nemo perspiciatis molestias ex neque eius quae. Rerum eligendi id,
+                                            nobis
+                                            libero error earum placeat inventore perferendis commodi minima voluptas
+                                            saepe
+                                            assumenda!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__list-item">
+                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                                <div class="popup__list-card two">
+                                    <div class="popup__card-image">
+                                        <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
+                                    </div>
+                                    <div class="popup__card-content">
+                                        <h3 class="popup__card-name">Maria Vyguzova</h3>
+                                        <div class="popup__card-text">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing
+                                            elit. Nemo perspiciatis molestias ex neque eius quae. Rerum eligendi id,
+                                            nobis
+                                            libero error earum placeat inventore perferendis commodi minima voluptas
+                                            saepe
+                                            assumenda!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__list-item">
+                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                                <div class="popup__list-card third">
+                                    <div class="popup__card-image">
+                                        <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
+                                    </div>
+                                    <div class="popup__card-content">
+                                        <h3 class="popup__card-name">Maria Vyguzova</h3>
+                                        <div class="popup__card-text">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing
+                                            elit. Nemo perspiciatis molestias ex neque eius quae. Rerum eligendi id,
+                                            nobis
+                                            libero error earum placeat inventore perferendis commodi minima voluptas
+                                            saepe
+                                            assumenda!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__list-item">
+                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                                <div class="popup__list-card four">
+                                    <div class="popup__card-image">
+                                        <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
+                                    </div>
+                                    <div class="popup__card-content">
+                                        <h3 class="popup__card-name">Maria Vyguzova</h3>
+                                        <div class="popup__card-text">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing
+                                            elit. Nemo perspiciatis molestias ex neque eius quae. Rerum eligendi id,
+                                            nobis
+                                            libero error earum placeat inventore perferendis commodi minima voluptas
+                                            saepe
+                                            assumenda!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__item">
+                        <form action="/" class="popup__form">
+                            <input type="text" class="popup__form-input flatpickr" id="date" name="date"
+                                placeholder="Выберите дату" required>
+                            <div class="select">
+                                <select class="popup__form-input service" name="service" placeholder="Услуга"
+                                    required="">
+                                    <option selected="true" disabled="disabled">Выберите услугу</option>
+                                    <option value="1">Бикини по линии трусиков </option>
+                                    <option value="2">Глубокое бикини</option>
+                                    <option value="3">Подмышки </option>
+                                    <option value="4">Голень </option>
+                                    <option value="5">Бедро </option>
+                                    <option value="6">Ноги полностью</option>
+                                    <option value="7">Руки </option>
+                                    <option value="8">Зона верхней губы</option>
+                                    <option value="9">Живот полоска</option>
+                                </select>
+                            </div>
+                            <input type="text" class="popup__form-input" id="name" placeholder="Имя" required>
+                            <input type="tel" class="popup__form-input" id="phone" placeholder="+791234567890" required>
+                        </form>
+                        <div class="popup__times-list">
+                            <p class="popup__times-link">10:00</p>
+                            <p class="popup__times-link">10:30</p>
+                            <p class="popup__times-link">11:00</p>
+                            <p class="popup__times-link">11:30</p>
+                            <p class="popup__times-link">12:00</p>
+                            <p class="popup__times-link">12:30</p>
+                            <p class="popup__times-link">13:00</p>
+                            <p class="popup__times-link">13:30</p>
+                            <p class="popup__times-link">14:00</p>
+                            <p class="popup__times-link">14:30</p>
+                            <p class="popup__times-link">15:00</p>
+                            <p class="popup__times-link">15:30</p>
+                            <p class="popup__times-link">16:00</p>
+                            <p class="popup__times-link">16:30</p>
+                            <p class="popup__times-link">17:00</p>
+                            <p class="popup__times-link">17:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__footer">
+                    <button class="button popup__button">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__second">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title popup-second">Запись на шугаринг
+                    осуществлена</h2>
+                <a href="#" class="popup__close-second">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        class="to-svg">
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(0.707109 0.707105 -0.707109 0.707105 12.6 0.000244141)" fill="#94378C">
+                        </rect>
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#94378C"></rect>
+                    </svg>
+                </a>
+                <div class="popup__content-block popup-second">
+                    <div class="popup__content-text"><span class="client-name"></span>, ждём Вас <span
+                            class="visit-date"></span> в
+                        <span class="visit-time"></span> в салоне EPIL_DEPIL_174 к мастеру <span
+                            class="visit-master"></span> на шугаринг. К оплате 450₽. На номер
+                        <span class="visit-phone"></span> за
+                        час до
+                        процедуры будет отправлена СМС с напоминанием.
+                        С заботой, Салоны красоты в Челябинске :)</div>
+                    <div class="popup__content-heart"></div>
+                    <button class="button popups__close">Отлично!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
         integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/flatpckr.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>

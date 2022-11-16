@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/flatpickr.min.css">
+    <link rel="stylesheet" href="src/css/select.css">
     <title>Салон красоты "Flacon"</title>
 </head>
 
@@ -163,7 +163,8 @@
                                 </div>
                                 <div class="intro__content-group">
                                     <div class="intro__content-text">Доступные цены, высокое качество</div>
-                                    <button class="button intro popup-link">Записаться в салон</button>
+                                    <button class="button intro popup-link" data-popup=".popup-order">Записаться в
+                                        салон</button>
                                 </div>
 
                             </div>
@@ -193,7 +194,8 @@
                                         востребованных процедур в салонах красоты. Раньше к депиляции прибегали только
                                         спортсмены, чтобы подготовиться к важному мероприятию. Но прогресс не стоит
                                         на месте и в ...</div>
-                                    <button class="button services popup-link">Записаться в один клик</button>
+                                    <button class="button services popup-link" data-popup=".popup-order">Записаться в
+                                        один клик</button>
                                 </div>
                             </div>
 
@@ -204,8 +206,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Зона лица</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Подмышечные впадины</div>
@@ -218,8 +218,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
@@ -232,8 +230,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
@@ -261,7 +257,8 @@
                                         востребованных в бьюти-салонах. Каждая девушка мечтает о гладкой и мягкой коже,
                                         поэтому многие из них выбирают депиляцию в качестве процедуры удаления
                                         нежелательных ...</div>
-                                    <button class="button services popup-link">Записаться в один клик</button>
+                                    <button class="button services popup-link" data-popup=".popup-order">Записаться в
+                                        один клик</button>
                                 </div>
                             </div>
 
@@ -272,8 +269,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Зона лица</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Подмышечные впадины</div>
                                             <div class="services__table-item">Подмышечные впадины</div>
@@ -286,8 +281,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
                                             <div class="services__table-item">20 минут</div>
@@ -300,8 +293,6 @@
                                         <div class="services__table-block">
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
-                                        </div>
-                                        <div class="services__table-block hidden">
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
                                             <div class="services__table-item services__table-item-price">450 ₽</div>
@@ -653,6 +644,7 @@
                         </form>
                         <!-- /.form -->
                         <button class="button form" type="submit">Отправить</button>
+
                     </div>
                     <div class="footer__form-text">Отправляя данную форму, вы соглашаетесь c <a
                             class="footer__form-link" href="#">Политикой
@@ -756,11 +748,13 @@
                             transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#94378C"></rect>
                     </svg>
                 </a>
-                <div class="popup__content-block">
-                    <div class="popup__item salons">
-                        <div class="popup__item-list">
-                            <div class="popup__list-item">
-                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                <form class="popup__content-block">
+                    <div class="popup__item">
+                        <div class="options__masters-list">
+                            <div class="option__input">
+                                <input class="option__item" type="radio" name="name" id="master-first" checked>
+                                <label class="option__title popup__list-link"
+                                    for="master-first"><span>MARIA_VYGUZOVA</span></label>
                                 <div class="popup__list-card first">
                                     <div class="popup__card-image">
                                         <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
@@ -777,8 +771,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="popup__list-item">
-                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                            <div class="option__input">
+                                <input class="option__item" type="radio" name="name" id="master-second">
+                                <label class="option__title popup__list-link"
+                                    for="master-second"><span>MARIA_VYGUZOVA</span></label>
                                 <div class="popup__list-card two">
                                     <div class="popup__card-image">
                                         <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
@@ -795,8 +791,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="popup__list-item">
-                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                            <div class="option__input">
+                                <input class="option__item" type="radio" name="name" id="master-third">
+                                <label class="option__title popup__list-link"
+                                    for="master-third"><span>MARIA_VYGUZOVA</span></label>
                                 <div class="popup__list-card third">
                                     <div class="popup__card-image">
                                         <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
@@ -813,8 +811,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="popup__list-item">
-                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                            <div class="option__input">
+                                <input class="option__item" type="radio" name="name" id="master-fourth">
+                                <label class="option__title popup__list-link"
+                                    for="master-fourth"><span>MARIA_VYGUZOVA</span></label>
                                 <div class="popup__list-card four">
                                     <div class="popup__card-image">
                                         <img src="http://dummyimage.com/150x150/c0c0c0.jpb" alt="Фото мастера">
@@ -834,50 +834,86 @@
                         </div>
                     </div>
                     <div class="popup__item">
-                        <form action="/" class="popup__form">
-                            <input type="text" class="popup__form-input flatpickr" id="date" name="date"
+
+                        <div class="form__input option__input">
+                            <input type="date" class="popup__form-input" id="date" name="date"
                                 placeholder="Выберите дату" required>
-                            <div class="select">
-                                <select class="popup__form-input service" name="service" placeholder="Услуга"
-                                    required="">
-                                    <option selected="true" disabled="disabled">Выберите услугу</option>
-                                    <option value="1">Бикини по линии трусиков </option>
-                                    <option value="2">Глубокое бикини</option>
-                                    <option value="3">Подмышки </option>
-                                    <option value="4">Голень </option>
-                                    <option value="5">Бедро </option>
-                                    <option value="6">Ноги полностью</option>
-                                    <option value="7">Руки </option>
-                                    <option value="8">Зона верхней губы</option>
-                                    <option value="9">Живот полоска</option>
-                                </select>
-                            </div>
+                        </div>
+                        <div class="form__input option__input">
+                            <select class="form__select" name="service" placeholder="Услуга" required="">
+                                <option selected="true" disabled="disabled">Выберите услугу</option>
+                                <option value="1">Бикини по линии трусиков </option>
+                                <option value="2">Глубокое бикини</option>
+                                <option value="3">Подмышки </option>
+                                <option value="4">Голень </option>
+                                <option value="5">Бедро </option>
+                                <option value="6">Ноги полностью</option>
+                                <option value="7">Руки </option>
+                                <option value="8">Зона верхней губы</option>
+                                <option value="9">Живот полоска</option>
+                            </select>
+                        </div>
+                        <div class="form__input option__input">
                             <input type="text" class="popup__form-input" id="name" placeholder="Имя" required>
-                            <input type="tel" class="popup__form-input" id="phone" placeholder="+791234567890" required>
-                        </form>
-                        <div class="popup__times-list">
-                            <p class="popup__times-link">10:00</p>
-                            <p class="popup__times-link">10:30</p>
-                            <p class="popup__times-link">11:00</p>
-                            <p class="popup__times-link">11:30</p>
-                            <p class="popup__times-link">12:00</p>
-                            <p class="popup__times-link">12:30</p>
-                            <p class="popup__times-link">13:00</p>
-                            <p class="popup__times-link">13:30</p>
-                            <p class="popup__times-link">14:00</p>
-                            <p class="popup__times-link">14:30</p>
-                            <p class="popup__times-link">15:00</p>
-                            <p class="popup__times-link">15:30</p>
-                            <p class="popup__times-link">16:00</p>
-                            <p class="popup__times-link">16:30</p>
-                            <p class="popup__times-link">17:00</p>
-                            <p class="popup__times-link">17:30</p>
+                        </div>
+                        <div class="form__input option__input">
+                            <input type="tel" class="popup__form-input" id="phone" placeholder="+7 (912) 345-6789"
+                                required>
+                        </div>
+
+                        <div class="form__input popup__times-list option__input">
+                            <input class="option__item" id="time-first" type="radio" name="time" checked>
+                            <label for="time-first" class="popup__times-link">
+                                <span>10:00</span>
+                            </label>
+                            <input class="option__item" id="time-second" type="radio" name="time">
+                            <label for="time-second" class="popup__times-link">
+                                <span>10:30</span>
+                            </label>
+                            <input class="option__item" id="time-third" type="radio" name="time">
+                            <label for="time-third" class="popup__times-link">
+                                <span>11:00</span>
+                            </label>
+                            <input class="option__item" id="time-fourth" type="radio" name="time">
+                            <label for="time-fourth" class="popup__times-link">
+                                <span>11:30</span>
+                            </label>
+                            <input class="option__item" id="time-fifth" type="radio" name="time">
+                            <label for="time-fifth" class="popup__times-link">
+                                <span>12:00</span>
+                            </label>
+                            <input class="option__item" id="time-sixth" type="radio" name="time">
+                            <label for="time-sixth" class="popup__times-link">
+                                <span>12:30</span>
+                            </label>
+                            <input class="option__item" id="time-seventh" type="radio" name="time">
+                            <label for="time-seventh" class="popup__times-link">
+                                <span>13:00</span>
+                            </label>
+                            <input class="option__item" id="time-eighth" type="radio" name="time">
+                            <label for="time-eighth" class="popup__times-link">
+                                <span>13:30</span>
+                            </label>
+                            <input class="option__item" id="time-ninth" type="radio" name="time">
+                            <label for="time-ninth" class="popup__times-link">
+                                <span>14:00</span>
+                            </label>
+                            <input class="option__item" id="time-tenth" type="radio" name="time">
+                            <label for="time-tenth" class="popup__times-link">
+                                <span>14:30</span>
+                            </label>
                         </div>
                     </div>
-                </div>
-                <div class="popup__footer">
-                    <button class="button popup__button">Записаться</button>
-                </div>
+                    <div class="popup__footer">
+                        <div class="prices">
+                            <p class="price data-price1"></p>
+                            <div class="price data-price">Цена: 500 ₽</div>
+                            <div class="old-price"></div>
+                        </div>
+                        <button class="button popup__button">Записаться</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
@@ -913,13 +949,190 @@
         </div>
     </div>
 
+    <!-- <div class="popup-boxes">
+        <div class="popup popup-order">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="close-popup close-btn"><img src="src/img/icons/popup-close.svg" alt="" class="to-svg">
+                    </div>
+                    <div class="h2">Запись на шугаринг</div>
+
+                    <form action="/" class="form-wrap" data-popup-after-submit=".popup-done">
+                        <div class="left-side">
+                            <div class="masters-data master-names">
+                                <label class="check-label">
+                                    <input class="master-change" type="radio" name="master" value="14">
+                                    <span class="check-item">Оксана</span>
+                                </label>
+                            </div>
+                            <div class="popup-profile grid-full">
+                                <div class="profile-top-row profile-data">
+                                    <div class="p-photo">
+                                    </div>
+                                    <div class="pt-right">
+                                        <p><b></b></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="profile-address address-data">
+                                    <div class="address-data"></div>
+                                </div>
+                            </div>
+                            <div class="popup__list-item">
+                                <button class="popup__list-link">MARIA_VYGUZOVA</button>
+                                <div class="popup__list-card active first">
+                                    <div class="popup__card-image">
+                                        <img src="src/img/popup/master.jpg" alt="Фото мастера">
+                                    </div>
+                                    <div class="popup__card-content">
+                                        <h3 class="popup__card-name">Maria Vyguzova</h3>
+                                        <div class="popup__card-text">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing
+                                            elit. Nemo perspiciatis molestias ex neque eius quae. Rerum eligendi id,
+                                            nobis
+                                            libero error earum placeat inventore perferendis commodi minima voluptas
+                                            saepe
+                                            assumenda!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="form-input">
+                                <input type="date" name="date" placeholder="Выберите дату" required>
+                                <img src="./images/icons/done.svg" alt="" class="icon valid-icon">
+                            </div>
+                            <div class="form-input">
+                                <select class="form__select" name="service" placeholder="Услуга">
+                                    <option value="1" selected>Бикини по линии трусиков </option>
+                                    <option value="2">Глубокое бикини</option>
+                                    <option value="3">Подмышки </option>
+                                    <option value="4">Голень </option>
+                                    <option value="5">Бедро </option>
+                                    <option value="6">Ноги полностью</option>
+                                    <option value="7">Руки </option>
+                                    <option value="8">Зона верхней губы</option>
+                                    <option value="9">Живот полоска</option>
+                                </select>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="name" placeholder="Имя" required>
+                                <img src="./images/icons/done.svg" alt="" class="icon valid-icon">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="phone" placeholder="Телефон" class="phone" required>
+                                <img src="./images/icons/done.svg" alt="" class="icon valid-icon">
+                            </div>
+
+                            <div class="right-grid">
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:00">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:30">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:00">
+                                    <span class="check-item">11:00</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:30">
+                                    <span class="check-item">11:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:00">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:30">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:00">
+                                    <span class="check-item">11:00</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:30">
+                                    <span class="check-item">11:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:00">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:30">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:00">
+                                    <span class="check-item">11:00</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:30">
+                                    <span class="check-item">11:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:00">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="10:30">
+                                    <span class="check-item">10:30</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:00">
+                                    <span class="check-item">11:00</span>
+                                </label>
+                                <label class="check-label">
+                                    <input type="radio" name="time" value="11:30">
+                                    <span class="check-item">11:30</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="bottom-row">
+                            <div class="prices">
+                                <div class="price">350₽</div>
+                                <div class="old-price">450₽</div>
+                            </div>
+                            <button class="btn">Записаться</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-done">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="close-popup close-btn"><img src="./images/icons/popup-close.svg" alt="" class="to-svg">
+                    </div>
+                    <div class="h2">Запись на шугаринг <br>
+                        осуществлена</div>
+
+                    <div class="p-description">Валентина, ждём Вас 22.09.22 в 10:30
+                        в салоне EPIL_DEPIL_174 на шугаринг. К оплате 350₽. На номер 8 (900) 123 45 67 за час до
+                        процедуры будет отправлена СМС с напоминанием.
+                        С заботой, Салоны красоты в Челябинске :)</div>
+
+                    <img src="./images/icons/heart.png" alt="" class="heart">
+
+                    <div class="btn close-popup">Отлично!</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
         integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/flatpckr.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

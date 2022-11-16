@@ -67,13 +67,45 @@ $(document).ready(function () {
 
     // POPUP
 
-    $('.popup__list-link').on('click', function (event) {
-        event.preventDefault();
+    // function visitMaster() {
+    //     const masters = document.querySelectorAll('.option__input')
 
-        $(this).toggleClass('active');
-        $('.visit-master').text($(this).html())
-        $(event.currentTarget).next().toggleClass('active')
+    //     for (let master of masters) {
+    //         master.addEventListener('click', () => {
+    //             clearActiveClasses()
+
+    //             master.classList.add('active')
+    //             $(event.currentTarget).closest('.popup__list-card').toggleClass('active')
+
+    //         })
+    //     }
+
+    //     function clearActiveClasses() {
+    //         masters.forEach((master) => {
+    //             master.classList.remove('active')
+    //             $('.popup__list-card').removeClass('active')
+    //         })
+    //     }
+
+    // }
+
+    // visitMaster()
+
+    $('.popup__list-link').on('click', function (event) {
+        event.preventDefault()
+
+        $(this).next('.popup__list-card').toggleClass('active')
+        $(this).toggleClass('active')
+        $('.option__item').removeAttr('checked')
     })
+
+    // console.log($('.form__label-master').html())
+
+    // $('.popup__list-link').on('click', function (event) {
+    //     event.preventDefault();
+
+    //     $('.visit-master').text($(this).html())
+    // })
 
     $('.popup-link').on('click', function (event) {
         event.preventDefault();
@@ -81,52 +113,55 @@ $(document).ready(function () {
         $('.popup').toggleClass('active')
     })
 
-    $('.popup__close, .popups__close').on('click', function (event) {
+    // $('.popup__close').on('click', function (event) {
+    //     event.preventDefault();
+
+
+    //     $('.popup, .popup__list-card').removeClass('active')
+    // })
+
+    $('.popup__close').on('click', function (event) {
         event.preventDefault();
 
-
-        $('.popup, .popup__list-card').removeClass('active')
+        $('.popup, .popup__second').removeClass('active')
     })
+
+    // $('.popup__button').on('click', function (event) {
+    //     event.preventDefault();
+
+    //     let visitDate = $('#date').val(),
+    //         visitPhone = $('#phone').val(),
+    //         clientName = $('#name').val()
+
+    //     $('.visit-date').text(visitDate)
+    //     $('.visit-phone').text(visitPhone)
+    //     $('.client-name').text(clientName)
+    //     $('.popup__second').toggleClass('active')
+    // })
 
     $('.popup__close-second').on('click', function (event) {
         event.preventDefault();
 
         $('.popup__second').removeClass('active')
+
+        $('#form').trigger("reset");
     })
 
-    $('.popup__button').on('click', function (event) {
-        event.preventDefault();
+    // $('.popup__times-link').on('click', function (event) {
+    //     event.preventDefault()
 
-        let visitDate = $('#date').val(),
-            visitPhone = $('#phone').val(),
-            clientName = $('#name').val()
-
-        $('.visit-date').text(visitDate)
-        $('.visit-phone').text(visitPhone)
-        $('.client-name').text(clientName)
-        $('.popup__second').toggleClass('active')
-    })
-
-    $('.popup__times-link').on('click', function (event) {
-        event.preventDefault()
-
-        $(this).toggleClass('active')
-        let visitTime = $(this).html()
-        $('.visit-time').text(visitTime)
-    })
+    //     $(this).toggleClass('active')
+    //     let visitTime = $(this).html()
+    //     $('.visit-time').text(visitTime)
+    // })
 
     // SERVICES
 
-    $('.services__table-link').on('click', (event) => {
+    $('.services__table-link').on('click', function (event) {
         event.preventDefault()
 
-        $(event.currentTarget).closest('.services__table-block.hidden').toggleClass('visible')
+        $(this).closest('.services__content').toggleClass('opened')
     })
 
     $("#phone").mask("+7 (999) 999-9999");
-
-    $(".flatpickr").flatpickr();
-
-
-
 })

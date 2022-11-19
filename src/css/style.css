@@ -367,8 +367,9 @@ input {
   margin-left: 4rem;
 }
 
-.button.form.learn {
+.button.learn {
   width: 100%;
+  margin-top: 0;
 }
 
 /* HEADER */

@@ -791,12 +791,8 @@
                   name="email"
                   placeholder="Электронная почта"
                 />
-                <input
-                  class="feedback__input text"
-                  type="text"
-                  name="text"
-                  placeholder="Опишите суть вопроса или предложения "
-                />
+                <textarea
+                  class="feedback__input text" type="text" name="text" placeholder="Опишите суть вопроса или предложения" required></textarea>
               </form>
               <!-- /.form -->
               <button class="button form" type="submit">Отправить</button>
@@ -1287,13 +1283,6 @@
               ></rect>
             </svg>
           </a>
-          <!-- <div class="form__input option__input">
-                    <input type="text" class="popup__form-input" id="name" placeholder="Имя" required>
-                </div>
-                <div class="form__input option__input">
-                    <input type="tel" class="popup__form-input" id="phone" placeholder="+7 (912) 345-6789"
-                        required>
-                </div> -->
 
           <div class="learn__form-content">
             <form class="learn__feedback" action="/" method="post" id="form">
@@ -1330,7 +1319,7 @@
               </div>
             </form>
             <!-- /.form -->
-            <button class="button form learn" type="submit">Отправить</button>
+            <button class="button learn" type="submit">Отправить</button>
           </div>
         </div>
       </div>

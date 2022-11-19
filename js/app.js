@@ -13,17 +13,17 @@ $(document).ready(function () {
         appendArrows: $('.works__slider-btns'),
         waitForAnimate: false,
         responsive: [{
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 1
-                }
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
             }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1
+            }
+        }
         ]
     });
 
@@ -44,23 +44,23 @@ $(document).ready(function () {
         slidesToShow: 4,
         infinite: false,
         responsive: [{
-                breakpoint: 1230,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 1
-                }
+            breakpoint: 1230,
+            settings: {
+                slidesToShow: 3
             }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1
+            }
+        }
         ]
     });
 
@@ -99,47 +99,19 @@ $(document).ready(function () {
         $('.option__item').removeAttr('checked')
     })
 
-    // console.log($('.form__label-master').html())
-
-    // $('.popup__list-link').on('click', function (event) {
-    //     event.preventDefault();
-
-    //     $('.visit-master').text($(this).html())
-    // })
-
     $('.popup-link').on('click', function (event) {
         event.preventDefault();
 
         $('.popup').toggleClass('active')
     })
 
-    // $('.popup__close').on('click', function (event) {
-    //     event.preventDefault();
-
-
-    //     $('.popup, .popup__list-card').removeClass('active')
-    // })
-
     $('.popup__close').on('click', function (event) {
         event.preventDefault();
 
-        $('.popup, .popup__second').removeClass('active')
+        $('.popup, .popup__second, .popup__learn').removeClass('active')
     })
 
-    // $('.popup__button').on('click', function (event) {
-    //     event.preventDefault();
-
-    //     let visitDate = $('#date').val(),
-    //         visitPhone = $('#phone').val(),
-    //         clientName = $('#name').val()
-
-    //     $('.visit-date').text(visitDate)
-    //     $('.visit-phone').text(visitPhone)
-    //     $('.client-name').text(clientName)
-    //     $('.popup__second').toggleClass('active')
-    // })
-
-    $('.popup__close-second').on('click', function (event) {
+    $('.popup__close-second, .popup__close').on('click', function (event) {
         event.preventDefault();
 
         $('.popup__second').removeClass('active')
@@ -147,13 +119,11 @@ $(document).ready(function () {
         $('#form').trigger("reset");
     })
 
-    // $('.popup__times-link').on('click', function (event) {
-    //     event.preventDefault()
+    $('.popup__link-learn').on('click', function (event) {
+        event.preventDefault();
 
-    //     $(this).toggleClass('active')
-    //     let visitTime = $(this).html()
-    //     $('.visit-time').text(visitTime)
-    // })
+        $('.popup__learn').toggleClass('active')
+    })
 
     // SERVICES
 
